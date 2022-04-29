@@ -1,0 +1,23 @@
+[2022-02-20 17:40:47,922] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.cat.cat_print_proccesed_data scheduled__2022-02-19T17:28:01.321646+00:00 [queued]>
+[2022-02-20 17:40:47,936] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.cat.cat_print_proccesed_data scheduled__2022-02-19T17:28:01.321646+00:00 [queued]>
+[2022-02-20 17:40:47,937] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-20 17:40:47,937] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-20 17:40:47,938] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-20 17:40:47,951] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): cat.cat_print_proccesed_data> on 2022-02-19 17:28:01.321646+00:00
+[2022-02-20 17:40:47,957] {standard_task_runner.py:52} INFO - Started process 28623 to run task
+[2022-02-20 17:40:47,960] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'cat.cat_print_proccesed_data', 'scheduled__2022-02-19T17:28:01.321646+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpfdu_ib27', '--error-file', '/tmp/tmp6kchyjlz']
+[2022-02-20 17:40:47,961] {standard_task_runner.py:77} INFO - Job 58: Subtask cat.cat_print_proccesed_data
+[2022-02-20 17:40:48,028] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.cat.cat_print_proccesed_data scheduled__2022-02-19T17:28:01.321646+00:00 [running]> on host ff48034dfdbf
+[2022-02-20 17:40:48,137] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=cat.cat_print_proccesed_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-19T17:28:01.321646+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-19T17:28:01.321646+00:00
+[2022-02-20 17:41:48,146] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-20 17:41:48,244] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=cat.cat_print_proccesed_data, execution_date=20220219T172801, start_date=20220220T174047, end_date=20220220T174148
+[2022-02-20 17:41:48,408] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-20 17:41:48,448] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

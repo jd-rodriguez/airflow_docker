@@ -1,0 +1,2 @@
+[2022-03-14 11:52:00,920] {taskinstance.py:1026} INFO - Dependencies not met for <TaskInstance: tutorial.bsre.bsre_get_data scheduled__2022-03-07T10:29:52.784989+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2022-03-14 11:52:00,950] {local_task_job.py:99} INFO - Task is not able to be run

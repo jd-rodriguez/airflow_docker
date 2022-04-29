@@ -1,0 +1,23 @@
+[2022-04-23 14:27:55,311] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.yryrty.yryrty_proccess_data scheduled__2022-04-22T14:25:49.377068+00:00 [queued]>
+[2022-04-23 14:27:55,334] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.yryrty.yryrty_proccess_data scheduled__2022-04-22T14:25:49.377068+00:00 [queued]>
+[2022-04-23 14:27:55,336] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 14:27:55,338] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-04-23 14:27:55,339] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 14:27:55,362] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): yryrty.yryrty_proccess_data> on 2022-04-22 14:25:49.377068+00:00
+[2022-04-23 14:27:55,370] {standard_task_runner.py:52} INFO - Started process 726 to run task
+[2022-04-23 14:27:55,377] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'yryrty.yryrty_proccess_data', 'scheduled__2022-04-22T14:25:49.377068+00:00', '--job-id', '1212', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmp1mhd8ano', '--error-file', '/tmp/tmpytf0tdh_']
+[2022-04-23 14:27:55,379] {standard_task_runner.py:77} INFO - Job 1212: Subtask yryrty.yryrty_proccess_data
+[2022-04-23 14:27:55,472] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.yryrty.yryrty_proccess_data scheduled__2022-04-22T14:25:49.377068+00:00 [running]> on host ff48034dfdbf
+[2022-04-23 14:27:55,546] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=yryrty.yryrty_proccess_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-22T14:25:49.377068+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-22T14:25:49.377068+00:00
+[2022-04-23 14:28:55,566] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-23 14:28:55,601] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=yryrty.yryrty_proccess_data, execution_date=20220422T142549, start_date=20220423T142755, end_date=20220423T142855
+[2022-04-23 14:28:55,671] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-23 14:28:56,018] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

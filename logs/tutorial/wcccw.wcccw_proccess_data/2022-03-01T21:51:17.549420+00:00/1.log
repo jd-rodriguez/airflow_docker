@@ -1,0 +1,23 @@
+[2022-03-02 21:53:23,950] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.wcccw.wcccw_proccess_data scheduled__2022-03-01T21:51:17.549420+00:00 [queued]>
+[2022-03-02 21:53:23,969] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.wcccw.wcccw_proccess_data scheduled__2022-03-01T21:51:17.549420+00:00 [queued]>
+[2022-03-02 21:53:23,970] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-02 21:53:23,971] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-03-02 21:53:23,975] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-02 21:53:24,003] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): wcccw.wcccw_proccess_data> on 2022-03-01 21:51:17.549420+00:00
+[2022-03-02 21:53:24,019] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'wcccw.wcccw_proccess_data', 'scheduled__2022-03-01T21:51:17.549420+00:00', '--job-id', '457', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpyj3571lb', '--error-file', '/tmp/tmpye82hfkh']
+[2022-03-02 21:53:24,014] {standard_task_runner.py:52} INFO - Started process 15275 to run task
+[2022-03-02 21:53:24,021] {standard_task_runner.py:77} INFO - Job 457: Subtask wcccw.wcccw_proccess_data
+[2022-03-02 21:53:24,177] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.wcccw.wcccw_proccess_data scheduled__2022-03-01T21:51:17.549420+00:00 [running]> on host ff48034dfdbf
+[2022-03-02 21:53:24,298] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=wcccw.wcccw_proccess_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-01T21:51:17.549420+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-01T21:51:17.549420+00:00
+[2022-03-02 21:54:24,282] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-02 21:54:24,303] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=wcccw.wcccw_proccess_data, execution_date=20220301T215117, start_date=20220302T215323, end_date=20220302T215424
+[2022-03-02 21:54:24,368] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-02 21:54:24,416] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

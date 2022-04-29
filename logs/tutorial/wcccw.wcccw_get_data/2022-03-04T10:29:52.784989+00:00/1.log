@@ -1,0 +1,23 @@
+[2022-03-05 10:30:53,702] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.wcccw.wcccw_get_data scheduled__2022-03-04T10:29:52.784989+00:00 [queued]>
+[2022-03-05 10:30:53,721] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.wcccw.wcccw_get_data scheduled__2022-03-04T10:29:52.784989+00:00 [queued]>
+[2022-03-05 10:30:53,722] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-05 10:30:53,723] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-03-05 10:30:53,724] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-05 10:30:53,742] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): wcccw.wcccw_get_data> on 2022-03-04 10:29:52.784989+00:00
+[2022-03-05 10:30:53,749] {standard_task_runner.py:52} INFO - Started process 522 to run task
+[2022-03-05 10:30:53,757] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'wcccw.wcccw_get_data', 'scheduled__2022-03-04T10:29:52.784989+00:00', '--job-id', '547', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmp787uggye', '--error-file', '/tmp/tmpgojnu0o5']
+[2022-03-05 10:30:53,759] {standard_task_runner.py:77} INFO - Job 547: Subtask wcccw.wcccw_get_data
+[2022-03-05 10:30:53,900] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.wcccw.wcccw_get_data scheduled__2022-03-04T10:29:52.784989+00:00 [running]> on host ff48034dfdbf
+[2022-03-05 10:30:54,041] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=wcccw.wcccw_get_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-04T10:29:52.784989+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-04T10:29:52.784989+00:00
+[2022-03-05 10:31:54,062] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-05 10:31:54,094] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=wcccw.wcccw_get_data, execution_date=20220304T102952, start_date=20220305T103053, end_date=20220305T103154
+[2022-03-05 10:31:54,132] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-05 10:31:54,189] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

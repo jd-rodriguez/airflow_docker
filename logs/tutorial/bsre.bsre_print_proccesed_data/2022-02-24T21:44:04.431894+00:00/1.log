@@ -1,0 +1,23 @@
+[2022-02-26 11:39:19,866] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.bsre.bsre_print_proccesed_data scheduled__2022-02-24T21:44:04.431894+00:00 [queued]>
+[2022-02-26 11:39:19,889] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.bsre.bsre_print_proccesed_data scheduled__2022-02-24T21:44:04.431894+00:00 [queued]>
+[2022-02-26 11:39:19,890] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-26 11:39:19,891] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-26 11:39:19,892] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-26 11:39:19,908] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): bsre.bsre_print_proccesed_data> on 2022-02-24 21:44:04.431894+00:00
+[2022-02-26 11:39:19,918] {standard_task_runner.py:52} INFO - Started process 269 to run task
+[2022-02-26 11:39:19,924] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'bsre.bsre_print_proccesed_data', 'scheduled__2022-02-24T21:44:04.431894+00:00', '--job-id', '284', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpom09c0md', '--error-file', '/tmp/tmpmbelbqzr']
+[2022-02-26 11:39:19,925] {standard_task_runner.py:77} INFO - Job 284: Subtask bsre.bsre_print_proccesed_data
+[2022-02-26 11:39:20,000] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.bsre.bsre_print_proccesed_data scheduled__2022-02-24T21:44:04.431894+00:00 [running]> on host ff48034dfdbf
+[2022-02-26 11:39:20,064] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=bsre.bsre_print_proccesed_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-24T21:44:04.431894+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-24T21:44:04.431894+00:00
+[2022-02-26 11:40:20,034] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-26 11:40:20,064] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=bsre.bsre_print_proccesed_data, execution_date=20220224T214404, start_date=20220226T113919, end_date=20220226T114020
+[2022-02-26 11:40:20,107] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-26 11:40:20,159] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

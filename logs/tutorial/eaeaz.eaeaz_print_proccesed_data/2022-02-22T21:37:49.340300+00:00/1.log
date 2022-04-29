@@ -1,0 +1,23 @@
+[2022-02-23 21:44:03,756] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.eaeaz.eaeaz_print_proccesed_data scheduled__2022-02-22T21:37:49.340300+00:00 [queued]>
+[2022-02-23 21:44:03,781] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.eaeaz.eaeaz_print_proccesed_data scheduled__2022-02-22T21:37:49.340300+00:00 [queued]>
+[2022-02-23 21:44:03,782] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-23 21:44:03,783] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-23 21:44:03,784] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-23 21:44:03,802] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): eaeaz.eaeaz_print_proccesed_data> on 2022-02-22 21:37:49.340300+00:00
+[2022-02-23 21:44:03,815] {standard_task_runner.py:52} INFO - Started process 461 to run task
+[2022-02-23 21:44:03,820] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'eaeaz.eaeaz_print_proccesed_data', 'scheduled__2022-02-22T21:37:49.340300+00:00', '--job-id', '165', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmps52nqxje', '--error-file', '/tmp/tmpvgrkrlws']
+[2022-02-23 21:44:03,821] {standard_task_runner.py:77} INFO - Job 165: Subtask eaeaz.eaeaz_print_proccesed_data
+[2022-02-23 21:44:03,928] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.eaeaz.eaeaz_print_proccesed_data scheduled__2022-02-22T21:37:49.340300+00:00 [running]> on host ff48034dfdbf
+[2022-02-23 21:44:04,034] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=eaeaz.eaeaz_print_proccesed_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-22T21:37:49.340300+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-22T21:37:49.340300+00:00
+[2022-02-23 21:45:04,055] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-23 21:45:04,068] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=eaeaz.eaeaz_print_proccesed_data, execution_date=20220222T213749, start_date=20220223T214403, end_date=20220223T214504
+[2022-02-23 21:45:04,101] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-23 21:45:04,135] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

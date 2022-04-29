@@ -1,0 +1,23 @@
+[2022-04-28 15:45:55,616] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.import_bsre.run_bsre.alm manual__2022-04-28T15:45:52.388232+00:00 [queued]>
+[2022-04-28 15:45:55,635] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.import_bsre.run_bsre.alm manual__2022-04-28T15:45:52.388232+00:00 [queued]>
+[2022-04-28 15:45:55,637] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-28 15:45:55,638] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-04-28 15:45:55,640] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-28 15:45:55,660] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): import_bsre.run_bsre.alm> on 2022-04-28 15:45:52.388232+00:00
+[2022-04-28 15:45:55,668] {standard_task_runner.py:52} INFO - Started process 2210 to run task
+[2022-04-28 15:45:55,673] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cdn_daily', 'import_bsre.run_bsre.alm', 'manual__2022-04-28T15:45:52.388232+00:00', '--job-id', '1500', '--raw', '--subdir', 'DAGS_FOLDER/cdn_daily.py', '--cfg-path', '/tmp/tmpxi5he6kx', '--error-file', '/tmp/tmpwgmnd9a9']
+[2022-04-28 15:45:55,675] {standard_task_runner.py:77} INFO - Job 1500: Subtask import_bsre.run_bsre.alm
+[2022-04-28 15:45:55,766] {logging_mixin.py:109} INFO - Running <TaskInstance: cdn_daily.import_bsre.run_bsre.alm manual__2022-04-28T15:45:52.388232+00:00 [running]> on host d5ad096ffea5
+[2022-04-28 15:45:55,865] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cdn_daily
+AIRFLOW_CTX_TASK_ID=import_bsre.run_bsre.alm
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-28T15:45:52.388232+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-28T15:45:52.388232+00:00
+[2022-04-28 15:45:55,895] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-28 15:45:55,920] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=cdn_daily, task_id=import_bsre.run_bsre.alm, execution_date=20220428T154552, start_date=20220428T154555, end_date=20220428T154555
+[2022-04-28 15:45:55,971] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-28 15:45:56,034] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

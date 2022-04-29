@@ -1,0 +1,24 @@
+{
+    "imports":{
+        "bsre":{
+            "filenames":["bsre1","bsre2"],
+            "folder_name":"imports",
+            "process_name":"bsre.alm"
+        },
+        "cat":{
+            "filenames":["cat1","cat2"],
+            "folder_name":"imports",
+            "process_name":"cat.alm"
+        },
+        "pre":{
+            "filenames":[],
+            "folder_name":"",
+            "process_name":"pre.alm"
+        },
+        "vol":{
+            "filenames":["vol1"],
+            "folder_name":"exports",
+            "process_name":"vol.alm"
+        }
+    }
+}

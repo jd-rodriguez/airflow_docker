@@ -1,0 +1,23 @@
+[2022-02-26 11:38:18,279] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.cat.cat_proccess_data scheduled__2022-02-24T21:44:04.431894+00:00 [queued]>
+[2022-02-26 11:38:18,313] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.cat.cat_proccess_data scheduled__2022-02-24T21:44:04.431894+00:00 [queued]>
+[2022-02-26 11:38:18,315] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-26 11:38:18,316] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-26 11:38:18,317] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-26 11:38:18,338] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): cat.cat_proccess_data> on 2022-02-24 21:44:04.431894+00:00
+[2022-02-26 11:38:18,346] {standard_task_runner.py:52} INFO - Started process 201 to run task
+[2022-02-26 11:38:18,354] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'cat.cat_proccess_data', 'scheduled__2022-02-24T21:44:04.431894+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmp6uf5g8za', '--error-file', '/tmp/tmpovjr1658']
+[2022-02-26 11:38:18,355] {standard_task_runner.py:77} INFO - Job 270: Subtask cat.cat_proccess_data
+[2022-02-26 11:38:18,474] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.cat.cat_proccess_data scheduled__2022-02-24T21:44:04.431894+00:00 [running]> on host ff48034dfdbf
+[2022-02-26 11:38:18,577] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=cat.cat_proccess_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-24T21:44:04.431894+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-24T21:44:04.431894+00:00
+[2022-02-26 11:39:18,593] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-26 11:39:18,611] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=cat.cat_proccess_data, execution_date=20220224T214404, start_date=20220226T113818, end_date=20220226T113918
+[2022-02-26 11:39:18,663] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-26 11:39:18,699] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

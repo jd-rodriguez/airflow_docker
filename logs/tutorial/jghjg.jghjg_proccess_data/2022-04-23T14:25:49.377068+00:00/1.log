@@ -1,0 +1,23 @@
+[2022-04-26 13:56:22,678] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.jghjg.jghjg_proccess_data scheduled__2022-04-23T14:25:49.377068+00:00 [queued]>
+[2022-04-26 13:56:22,707] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.jghjg.jghjg_proccess_data scheduled__2022-04-23T14:25:49.377068+00:00 [queued]>
+[2022-04-26 13:56:22,709] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-26 13:56:22,710] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-04-26 13:56:22,712] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-26 13:56:22,737] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): jghjg.jghjg_proccess_data> on 2022-04-23 14:25:49.377068+00:00
+[2022-04-26 13:56:22,746] {standard_task_runner.py:52} INFO - Started process 262 to run task
+[2022-04-26 13:56:22,758] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'jghjg.jghjg_proccess_data', 'scheduled__2022-04-23T14:25:49.377068+00:00', '--job-id', '1270', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpytya1gck', '--error-file', '/tmp/tmpgm2nwiln']
+[2022-04-26 13:56:22,760] {standard_task_runner.py:77} INFO - Job 1270: Subtask jghjg.jghjg_proccess_data
+[2022-04-26 13:56:22,917] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.jghjg.jghjg_proccess_data scheduled__2022-04-23T14:25:49.377068+00:00 [running]> on host ff48034dfdbf
+[2022-04-26 13:56:23,101] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=jghjg.jghjg_proccess_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-23T14:25:49.377068+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-23T14:25:49.377068+00:00
+[2022-04-26 13:57:23,130] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-26 13:57:23,161] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=jghjg.jghjg_proccess_data, execution_date=20220423T142549, start_date=20220426T135622, end_date=20220426T135723
+[2022-04-26 13:57:23,266] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-26 13:57:23,352] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

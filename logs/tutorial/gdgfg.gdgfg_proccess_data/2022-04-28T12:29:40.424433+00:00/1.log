@@ -1,0 +1,23 @@
+[2022-04-29 13:26:31,069] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.gdgfg.gdgfg_proccess_data scheduled__2022-04-28T12:29:40.424433+00:00 [queued]>
+[2022-04-29 13:26:31,099] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.gdgfg.gdgfg_proccess_data scheduled__2022-04-28T12:29:40.424433+00:00 [queued]>
+[2022-04-29 13:26:31,100] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-29 13:26:31,102] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-04-29 13:26:31,103] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-29 13:26:31,135] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): gdgfg.gdgfg_proccess_data> on 2022-04-28 12:29:40.424433+00:00
+[2022-04-29 13:26:31,146] {standard_task_runner.py:52} INFO - Started process 164 to run task
+[2022-04-29 13:26:31,153] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'gdgfg.gdgfg_proccess_data', 'scheduled__2022-04-28T12:29:40.424433+00:00', '--job-id', '1575', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmp2swla17d', '--error-file', '/tmp/tmpqf2pr8s3']
+[2022-04-29 13:26:31,156] {standard_task_runner.py:77} INFO - Job 1575: Subtask gdgfg.gdgfg_proccess_data
+[2022-04-29 13:26:31,316] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.gdgfg.gdgfg_proccess_data scheduled__2022-04-28T12:29:40.424433+00:00 [running]> on host d5ad096ffea5
+[2022-04-29 13:26:31,431] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=gdgfg.gdgfg_proccess_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-28T12:29:40.424433+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-28T12:29:40.424433+00:00
+[2022-04-29 13:27:31,451] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-29 13:27:31,670] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=gdgfg.gdgfg_proccess_data, execution_date=20220428T122940, start_date=20220429T132631, end_date=20220429T132731
+[2022-04-29 13:27:31,741] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-29 13:27:32,128] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

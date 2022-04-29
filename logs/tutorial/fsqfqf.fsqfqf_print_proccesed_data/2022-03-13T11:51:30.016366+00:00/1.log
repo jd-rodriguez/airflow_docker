@@ -1,0 +1,23 @@
+[2022-03-14 12:10:21,515] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.fsqfqf.fsqfqf_print_proccesed_data scheduled__2022-03-13T11:51:30.016366+00:00 [queued]>
+[2022-03-14 12:10:21,533] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: tutorial.fsqfqf.fsqfqf_print_proccesed_data scheduled__2022-03-13T11:51:30.016366+00:00 [queued]>
+[2022-03-14 12:10:21,534] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:10:21,535] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-03-14 12:10:21,536] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:10:21,554] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): fsqfqf.fsqfqf_print_proccesed_data> on 2022-03-13 11:51:30.016366+00:00
+[2022-03-14 12:10:21,560] {standard_task_runner.py:52} INFO - Started process 1164 to run task
+[2022-03-14 12:10:21,565] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'fsqfqf.fsqfqf_print_proccesed_data', 'scheduled__2022-03-13T11:51:30.016366+00:00', '--job-id', '864', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmp4g91nlqy', '--error-file', '/tmp/tmpz0jq9yrr']
+[2022-03-14 12:10:21,566] {standard_task_runner.py:77} INFO - Job 864: Subtask fsqfqf.fsqfqf_print_proccesed_data
+[2022-03-14 12:10:21,644] {logging_mixin.py:109} INFO - Running <TaskInstance: tutorial.fsqfqf.fsqfqf_print_proccesed_data scheduled__2022-03-13T11:51:30.016366+00:00 [running]> on host ff48034dfdbf
+[2022-03-14 12:10:21,710] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=fsqfqf.fsqfqf_print_proccesed_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-13T11:51:30.016366+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-13T11:51:30.016366+00:00
+[2022-03-14 12:11:21,702] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 12:11:21,718] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=fsqfqf.fsqfqf_print_proccesed_data, execution_date=20220313T115130, start_date=20220314T121021, end_date=20220314T121121
+[2022-03-14 12:11:21,782] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 12:11:21,823] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
