@@ -1,0 +1,23 @@
+[2022-04-30 15:46:23,095] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.run_pre.ctr manual__2022-04-30T15:46:12.555314+00:00 [queued]>
+[2022-04-30 15:46:23,116] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.run_pre.ctr manual__2022-04-30T15:46:12.555314+00:00 [queued]>
+[2022-04-30 15:46:23,117] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-30 15:46:23,119] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-04-30 15:46:23,120] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-30 15:46:23,141] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): run_pre.ctr> on 2022-04-30 15:46:12.555314+00:00
+[2022-04-30 15:46:23,149] {standard_task_runner.py:52} INFO - Started process 2433 to run task
+[2022-04-30 15:46:23,156] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cdn_daily', 'run_pre.ctr', 'manual__2022-04-30T15:46:12.555314+00:00', '--job-id', '1841', '--raw', '--subdir', 'DAGS_FOLDER/cdn_daily.py', '--cfg-path', '/tmp/tmpam_w4p7g', '--error-file', '/tmp/tmp0r6__7z5']
+[2022-04-30 15:46:23,158] {standard_task_runner.py:77} INFO - Job 1841: Subtask run_pre.ctr
+[2022-04-30 15:46:23,267] {logging_mixin.py:109} INFO - Running <TaskInstance: cdn_daily.run_pre.ctr manual__2022-04-30T15:46:12.555314+00:00 [running]> on host d5ad096ffea5
+[2022-04-30 15:46:23,404] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cdn_daily
+AIRFLOW_CTX_TASK_ID=run_pre.ctr
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-30T15:46:12.555314+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-30T15:46:12.555314+00:00
+[2022-04-30 15:46:23,495] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-30 15:46:23,549] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=cdn_daily, task_id=run_pre.ctr, execution_date=20220430T154612, start_date=20220430T154623, end_date=20220430T154623
+[2022-04-30 15:46:23,743] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-30 15:46:23,882] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

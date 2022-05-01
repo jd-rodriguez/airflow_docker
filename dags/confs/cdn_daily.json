@@ -20,5 +20,40 @@
             "folder_name":"exports",
             "process_name":"vol.alm"
         }
+    },
+    "scenarios":{
+        "bsre":{
+            "BAU":{
+                "process_name":"bsre.bau"
+            },
+            "CTR":{
+                "process_name":"bsre.ctr"
+            }
+            
+        },
+        "cat":{
+            "BAU":{
+                "process_name":"cat.bau"
+            },
+            "CTR":{
+                "process_name":"cat.ctr"
+            }
+        },
+        "pre":{
+            "BAU":{
+                "process_name":"pre.bau"
+            },
+            "CTR":{
+                "process_name":"pre.ctr"
+            }
+        },
+        "vol":{
+            "BAU":{
+                "process_name":"vol.bau"
+            },
+            "CTR":{
+                "process_name":"vol.ctr"
+            }
+        }
     }
 }

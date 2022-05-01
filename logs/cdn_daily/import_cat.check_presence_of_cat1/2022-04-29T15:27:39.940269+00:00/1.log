@@ -1,0 +1,23 @@
+[2022-04-29 15:27:41,208] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.import_cat.check_presence_of_cat1 manual__2022-04-29T15:27:39.940269+00:00 [queued]>
+[2022-04-29 15:27:41,232] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.import_cat.check_presence_of_cat1 manual__2022-04-29T15:27:39.940269+00:00 [queued]>
+[2022-04-29 15:27:41,234] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-29 15:27:41,236] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-04-29 15:27:41,237] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-29 15:27:41,272] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): import_cat.check_presence_of_cat1> on 2022-04-29 15:27:39.940269+00:00
+[2022-04-29 15:27:41,280] {standard_task_runner.py:52} INFO - Started process 3484 to run task
+[2022-04-29 15:27:41,288] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cdn_daily', 'import_cat.check_presence_of_cat1', 'manual__2022-04-29T15:27:39.940269+00:00', '--job-id', '1648', '--raw', '--subdir', 'DAGS_FOLDER/cdn_daily.py', '--cfg-path', '/tmp/tmpyo9j0nnk', '--error-file', '/tmp/tmpbtne96m7']
+[2022-04-29 15:27:41,290] {standard_task_runner.py:77} INFO - Job 1648: Subtask import_cat.check_presence_of_cat1
+[2022-04-29 15:27:41,434] {logging_mixin.py:109} INFO - Running <TaskInstance: cdn_daily.import_cat.check_presence_of_cat1 manual__2022-04-29T15:27:39.940269+00:00 [running]> on host d5ad096ffea5
+[2022-04-29 15:27:41,561] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cdn_daily
+AIRFLOW_CTX_TASK_ID=import_cat.check_presence_of_cat1
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-29T15:27:39.940269+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-29T15:27:39.940269+00:00
+[2022-04-29 15:27:41,596] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-29 15:27:41,644] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=cdn_daily, task_id=import_cat.check_presence_of_cat1, execution_date=20220429T152739, start_date=20220429T152741, end_date=20220429T152741
+[2022-04-29 15:27:41,707] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-29 15:27:41,772] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

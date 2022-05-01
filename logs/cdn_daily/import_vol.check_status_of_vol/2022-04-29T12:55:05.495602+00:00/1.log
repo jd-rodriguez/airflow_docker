@@ -1,0 +1,27 @@
+[2022-04-30 12:55:22,043] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.import_vol.check_status_of_vol scheduled__2022-04-29T12:55:05.495602+00:00 [queued]>
+[2022-04-30 12:55:22,064] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: cdn_daily.import_vol.check_status_of_vol scheduled__2022-04-29T12:55:05.495602+00:00 [queued]>
+[2022-04-30 12:55:22,065] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-30 12:55:22,066] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-04-30 12:55:22,067] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-30 12:55:22,086] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): import_vol.check_status_of_vol> on 2022-04-29 12:55:05.495602+00:00
+[2022-04-30 12:55:22,094] {standard_task_runner.py:52} INFO - Started process 259 to run task
+[2022-04-30 12:55:22,099] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cdn_daily', 'import_vol.check_status_of_vol', 'scheduled__2022-04-29T12:55:05.495602+00:00', '--job-id', '1801', '--raw', '--subdir', 'DAGS_FOLDER/cdn_daily.py', '--cfg-path', '/tmp/tmphefys_zb', '--error-file', '/tmp/tmpxaub19hf']
+[2022-04-30 12:55:22,100] {standard_task_runner.py:77} INFO - Job 1801: Subtask import_vol.check_status_of_vol
+[2022-04-30 12:55:22,173] {logging_mixin.py:109} INFO - Running <TaskInstance: cdn_daily.import_vol.check_status_of_vol scheduled__2022-04-29T12:55:05.495602+00:00 [running]> on host d5ad096ffea5
+[2022-04-30 12:55:22,244] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cdn_daily
+AIRFLOW_CTX_TASK_ID=import_vol.check_status_of_vol
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-29T12:55:05.495602+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-29T12:55:05.495602+00:00
+[2022-04-30 12:55:22,246] {logging_mixin.py:109} INFO - run_vol
+[2022-04-30 12:55:22,256] {logging_mixin.py:109} INFO - None
+[2022-04-30 12:55:22,266] {logging_mixin.py:109} INFO - vol.alm
+[2022-04-30 12:55:22,275] {logging_mixin.py:109} INFO - 8
+[2022-04-30 12:55:30,284] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-30 12:55:30,302] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=cdn_daily, task_id=import_vol.check_status_of_vol, execution_date=20220429T125505, start_date=20220430T125522, end_date=20220430T125530
+[2022-04-30 12:55:30,326] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-30 12:55:30,360] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

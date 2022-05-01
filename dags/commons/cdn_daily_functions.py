@@ -1,4 +1,4 @@
-def run_process(process_name):
+def run_process(process_name,*args):
     from airflow.operators.python_operator import PythonOperator
 
     def run(task_instance,process_name):
@@ -8,9 +8,6 @@ def run_process(process_name):
     
     def status_check(task_instance,process_name):
         import time
-        task_id="run_"+process_name
-        print(task_id)
-        print(task_instance.xcom_pull(task_id))
         process=task_instance.xcom_pull("run_"+process_name, key='process_name')
         print(process)
         pause=task_instance.xcom_pull("run_"+process_name, key='pause')
@@ -30,7 +27,7 @@ def run_process(process_name):
         op_kwargs={"process_name":process_name}
     )
 
-    execute_process >> process_status
+    execute_process >> process_status >> args
 
     return execute_process
 
@@ -45,7 +42,7 @@ def import_process(cdn_daily_configuration,source):
         task_instance.xcom_push(key='filename',value=filename),
         task_instance.xcom_push(key='folder_name',value=folder_name)
 
-    with TaskGroup("import_"+source) as task_group:
+    with TaskGroup("import_"+source,prefix_group_id=False) as task_group:
 
         process = run_process(cdn_daily_configuration['imports'][source]['process_name'])
 
@@ -56,5 +53,21 @@ def import_process(cdn_daily_configuration,source):
             op_kwargs={ "filename":filename,
                         "folder_name":cdn_daily_configuration['imports'][source]['folder_name']})
             import_files[filename] >> process
+
+    return task_group
+
+def run_scenarios(cdn_daily_configuration,source):
+
+    from airflow.operators.dummy_operator import DummyOperator
+    from airflow.utils.task_group import TaskGroup
+
+    with TaskGroup("run_scenarios_"+source,prefix_group_id=False) as task_group:
+
+        scenario_control=DummyOperator(
+            task_id='scenario_control_for_'+source
+        )
+        for scenario in cdn_daily_configuration['scenarios'][source].keys():
+            run_process(cdn_daily_configuration['scenarios'][source][scenario]['process_name'],scenario_control)
+
 
     return task_group

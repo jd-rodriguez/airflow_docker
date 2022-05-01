@@ -1,5 +1,6 @@
 from airflow import DAG
 from commons.cdn_daily_functions import import_process
+from commons.cdn_daily_functions import run_scenarios
 from datetime import datetime, timedelta
 import os
 import json
@@ -38,6 +39,7 @@ with DAG(
     concurrency=10,
 ) as dag:
     import_sources_groups={}
+    run_scenarios_groups={}
     my_dir = os.path.dirname(os.path.abspath(__file__))
     cdn_daily_configuration_filename=os.path.join(my_dir,'confs','cdn_daily.json')
     with open(cdn_daily_configuration_filename,'r') as outputfile:
@@ -46,5 +48,13 @@ with DAG(
     for import_source in cdn_daily_configuration['imports'].keys() :
         import_sources_groups[import_source] = import_process(cdn_daily_configuration,import_source)
 
+    for source in cdn_daily_configuration['scenarios'].keys() :
+        run_scenarios_groups[source] = run_scenarios(cdn_daily_configuration,source)
+
+
 
 [import_sources_groups['bsre'],import_sources_groups['cat'],import_sources_groups['pre']] >>import_sources_groups['vol']
+import_sources_groups['bsre']>>run_scenarios_groups['bsre']
+import_sources_groups['cat']>>run_scenarios_groups['cat']
+import_sources_groups['pre']>>run_scenarios_groups['pre']
+import_sources_groups['vol']>>run_scenarios_groups['vol']
